@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:myweb/views/home/home_view.dart';
+import 'locator.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
