@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myweb/views/home/home_view.dart';
-import 'locator.dart';
+import 'package:myweb/locator.dart';
+import 'package:myweb/views/layout_template/layout_template.dart';
 
 void main() {
   setupLocator();
@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(
               fontFamily: 'Nanum Barun Gothic',
             ));
-    return MaterialApp(title: 'My Website', theme: themeData, home: HomeView());
+    return MaterialApp(
+        title: 'My Website', theme: themeData, home: LayoutTemplate());
   }
 }
